@@ -2,7 +2,7 @@ const displayTextCharByChar = (el: HTMLElement, stringList: string[], wordDispla
     let len = 1;
     let shouldPlus = true;
     let poIndex = 0;
-    let timeout: NodeJS.Timeout | null;
+    let timeout: any;
     setInterval(() => {
         if (el) {
             const text = stringList[poIndex].slice(0, len);
