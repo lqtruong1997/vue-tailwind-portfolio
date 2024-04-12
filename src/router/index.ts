@@ -28,8 +28,7 @@ const router = createRouter({
         },
         {
           path: '/:pathMatch(.*)*',
-          redirect: '/home',
-          component: HomeView
+          redirect: '/resume'
         }
       ]
     }
