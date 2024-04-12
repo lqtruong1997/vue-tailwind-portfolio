@@ -34,7 +34,7 @@ const path = computed(() =>route.path)
 
 <template>
     <div class="bg-card-bg rounded-2xl p-8 flex">
-        <a v-for="item of navigationItems" :key="item.text" :href="item.url"
+        <a v-for="item of navigationItems" :key="item.text" @click="$router.push(item.url)"
         :class="{'bg-primary-bg text-white': item.url === path, 'bg-item-bg text-paragraph-color hover:text-button-text-color': item.url !== path}" 
         class="cursor-pointer px-1 mx-2 w-1/5 h-20 rounded-xl flex flex-col align-middle justify-center hover:bg-primary-bg">
             <component class="h-6" :is="item.icon"></component>
