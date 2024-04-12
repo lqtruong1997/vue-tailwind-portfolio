@@ -1,0 +1,37 @@
+@import 'animate.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+    html[data-theme='light'] {
+        --primary-bg: #FA5252;
+        --button-text-color: #fff;
+        --card-bg: #fff;
+        --heading-color: #000000;
+        --paragraph-color: #44566C;
+        --item-bg: #f3f4f6;
+        --text-light: #6b7280;
+        --text-dark: #374151;
+        --text-default: #2c3e50;
+        --border-light: #d1d5db;
+        --home-card-bg: #dbeafe;
+        --home-card-border: #dbeafe;
+        --page-bg-img: url('./src/assets/light-theme-bg.jpg');
+    }
+  
+    html[data-theme='dark'] {
+        --page-bg-img: url('./src/assets/dark-theme-bg.jpg');
+        --primary-bg: #FA5252;
+        --button-text-color: #fff;
+        --card-bg: #111111;
+        --heading-color: #fff;
+        --paragraph-color: rgb(166,166,166);
+        --item-bg: #212425;
+        --home-card-bg: #111111;
+        --home-card-border: #212425;
+        --text-light: #6b7280;
+        --text-dark: #fff;
+        --text-default: #fff;
+        --border-light: #d1d5db;
+    }
+}
