@@ -120,6 +120,7 @@ watch(theme, () => {
         display: none; 
     } 
     .project-modal {
-        max-height: 500px;
+        max-height: 600px;
+        height: 450px;
     }
 </style>

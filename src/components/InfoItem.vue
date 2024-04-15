@@ -6,7 +6,7 @@ const props = defineProps<{data: {title: String, value: String, icon: Component}
 
 <template>
     <div class="flex">
-        <span class="shadow my-auto h-12 mr-2 rounded-lg w-12 bg-card-bg text-xs hover:bg-primary-bg outline-none border-none p-3.5">
+        <span class="shadow my-auto h-12 mr-2 rounded-lg w-12 bg-card-bg text-xs hover:bg-primary-bg outline-none border-none p-3.5 hover:text-white">
             <Component :is="data.icon" ></Component>
         </span>
         <div class="flex flex-col justify-center">

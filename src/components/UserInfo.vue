@@ -73,7 +73,7 @@ onMounted(() => {
                 </a>
             </div>
             <div class="bg-item-bg p-7 rounded-2xl divide-y mb-4">
-                <InfoItem v-for="item in renderingItems" :key="item.title" :data="item" :class="item.color" class="py-2 hover:text-white"></InfoItem>
+                <InfoItem v-for="item in renderingItems" :key="item.title" :data="item" :class="item.color" class="py-2"></InfoItem>
             </div>
             <div class="flex justify-center pb-6">
                 <button type="button" class="w-1/2 h-12 text-button-text-color p-2 bg-primary-bg text-lg text-center rounded-full inline-flex items-center justify-center pl-4">
