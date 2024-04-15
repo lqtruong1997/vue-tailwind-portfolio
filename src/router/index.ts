@@ -28,7 +28,7 @@ const router = createRouter({
         },
         {
           path: '/:pathMatch(.*)*',
-          redirect: '/resume'
+          redirect: '/home'
         }
       ]
     }
