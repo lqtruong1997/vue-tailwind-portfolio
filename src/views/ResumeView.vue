@@ -38,36 +38,36 @@ const skillsDefault: Ref<SkillChip[]> = ref([
         {
             title: 'Angular',
             textColor: 'text-black',
-            logo: '/src/assets/angular.png'
+            logo: new URL('../assets/angular.png', import.meta.url).toString()
         },
         {
             title: 'Vue.js',
             textColor: 'text-black',
-            logo: '/src/assets/vue.svg'
+            logo: new URL('/src/assets/vue.svg', import.meta.url).toString()
         },
         {
             title: 'TypeScript',
             textColor: 'text-black',
-            logo: '/src/assets/typescript.png'
+            logo: new URL('../assets/typescript.png', import.meta.url).toString()
         },
         {
             title: 'JavaScript',
             textColor: 'text-black',
-            logo: '/src/assets/javascript.png'
+            logo: new URL('../assets/javascript.png', import.meta.url).toString()
         }, 
         {
             title: 'Bootstrap',
             textColor: 'text-black',
-            logo: '/src/assets/bootstrap.webp'
+            logo: new URL('../assets/bootstrap.webp', import.meta.url).toString()
         }, {
             title: 'Material',
             textColor: 'text-black',
-            logo: '/src/assets/angular-material.png'
+            logo: new URL('../assets/angular-material.png', import.meta.url).toString()
         },
         {
             title: 'Tailwind',
             textColor: 'text-black',
-            logo: '/src/assets/tailwind.svg'
+            logo: new URL('../assets/tailwind.svg', import.meta.url).toString()
         },{
             title: 'Micro Frontend',
             textColor: 'text-black'

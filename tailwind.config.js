@@ -18,13 +18,9 @@ export default {
         'button-text-color': 'var(--button-text-color)',
         'home-card-bg': 'var(--home-card-bg)',
         'home-card-border': 'var(--home-card-border)'
-        
       },
       backgroundImage: {
-        'light': "url('./src/assets/light-theme-bg.jpg')",
-        // 'avatar': "url('./src/assets/avatar.jpg')",
-        'dark': "url('./src/assets/dark-theme-bg.jpg')",
-        'page-bg-img': 'var(--page-bg-img)'
+        'page-bg-img': 'var(--page-bg-img)',
       },
     }
   },

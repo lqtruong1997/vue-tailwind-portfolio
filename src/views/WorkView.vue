@@ -16,7 +16,7 @@ interface Project {role: string, img: string, shortDescription: string, name: st
 const projects: Ref<Project[]> = ref([
     {
         role: 'Frontend Developer',
-        img: '/src/assets/Platform28Featured.webp',
+        img: new URL('../assets/Platform28Featured.webp', import.meta.url).toString(),
         shortDescription: 'Maintaining and Migrating a dashboard',
         name: 'Frontend developer for a dashboard of Platform 28',
         techs: 'Angular, Angular Material, Vue.js, Tailwind CSS, TypeScript',
@@ -28,7 +28,7 @@ const projects: Ref<Project[]> = ref([
         I also helped with migrating a complex multi-page application into a Single Page Application using Angular and micro front-end architecture.`
     },{
         role: 'Junior Web Developer',
-        img: '/src/assets/dinhduongmevabe.png',
+        img: new URL('../assets/dinhduongmevabe.png', import.meta.url).toString(),
         shortDescription: 'Maintaining both Frontend and Backend of domain dinhduongmevabe',
         name: 'Fullstack role for dashboard dinhduongmevabe',
         company: 'Precio Fishbone Vietnam',
@@ -42,7 +42,7 @@ const projects: Ref<Project[]> = ref([
         (PWA) technologies on the front-end, while leveraging ASP.NET, MSSQL on the back-end.`
     },{
         role: 'Fresher Web Developer',
-        img: '/src/assets/tera-logo.webp',
+        img: new URL('../assets/tera-logo.webp', import.meta.url).toString(),
         shortDescription: 'Maintaining both Frontend and Backend of domain tera.vn',
         name: 'Fullstack role for domain tera.vn',
         company: 'TERA',
