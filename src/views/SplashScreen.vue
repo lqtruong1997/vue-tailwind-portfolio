@@ -63,9 +63,15 @@ const update3DModel = (mroot: any) => {
     bbox.setFromObject(mroot);
     bbox.getCenter(cent);
     bbox.getSize(size);
-    //Reposition to 0,halfY,0
     mroot.position.copy(cent).multiplyScalar(-1);
-    camera.position.set(-10, 2.5, 10); 
+    camera.position.set(0, 2.5, 12);
+    window.addEventListener( 'mousemove', onMouseMove, false );
+}
+function onMouseMove( event: MouseEvent ) {
+
+    camera.position.x = ((event.clientX / window.innerWidth) * 2 - 1) * 8;
+    camera.position.y = (-(event.clientY / window.innerHeight) * 2 + 1) * 8;
+
 }
 </script>
 
