@@ -4,7 +4,7 @@ import InfoItem from './InfoItem.vue';
 import { DevicePhoneMobileIcon, MapPinIcon, EnvelopeIcon, CalendarIcon, ArrowDownTrayIcon } from '@heroicons/vue/24/solid'
 import { getRandomColorName } from '@/helpers/random';
 
-const positionList = ['Frontend Engineer', 'Vue.js Developer', 'Angular Developer', 'Frontend Developer']
+const positionList = ['Frontend Engineer', 'Vue.js Developer', 'Angular Developer', 'Fullstack Developer']
 const infoList = ref({
   phone: '0983472463',
   email: 'lqtruong1997@gmail.com',

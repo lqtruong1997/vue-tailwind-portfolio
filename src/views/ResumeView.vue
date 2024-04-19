@@ -15,12 +15,12 @@ const experiencesDefault: Ref<Experience[]> = ref([
         startTime: '3/2024',
         endTime: 'Present',
         company: 'Platform 28',
-        position: 'Front end Developer specializing in Vue.js'
+        position: 'Front end Developer'
     },{
         startTime: '1/2020',
         endTime: '2/2022',
         company: 'Platform 28',
-        position: 'Front end Developer specializing in Angular'
+        position: 'Web Developer'
     },{
         startTime: '4/2019',
         endTime: '12/2019',

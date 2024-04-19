@@ -1,37 +1,42 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import AppLayout from '@/layouts/AppLayout.vue'
 import HomeView from '@/views/HomeView.vue'
+import SplashScreen from '@/views/SplashScreen.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      redirect: '/home',
+      component: SplashScreen
+    },
+    {
+      path: '/details',
+      redirect: '/details/home',
       component: AppLayout,
       children: [
         {
-          path: 'home',
+          path: '/details/home',
           component: HomeView
         },{
-          path: 'resume',
+          path: '/details/resume',
           component: () => import('../views/ResumeView.vue')
         },{
-          path: 'works',
+          path: '/details/works',
           component: () => import('../views/WorkView.vue')
         },{
-          path: 'playground',
+          path: '/details/playground',
           component: () => import('../views/PlaygroundView.vue')
         },{
-          path: 'contact',
+          path: '/details/contact',
           component: () => import('../views/ContactView.vue')
-        },
-        {
-          path: '/:pathMatch(.*)*',
-          redirect: '/home'
         }
       ]
-    }
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      redirect: '/'
+    },
   ]
 })
 
