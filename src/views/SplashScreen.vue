@@ -31,6 +31,9 @@ onMounted(() => {
     target.value.appendChild(renderer.domElement);
 
     const loader = new GLTFLoader(manager);
+    setTimeout(() => {
+        initSuccess.value = true
+    }, 1500);
     
     loader.load(new URL('../assets/desk.glb', import.meta.url).toString(), function ( gltf: any ) {
         setTimeout(() => {
