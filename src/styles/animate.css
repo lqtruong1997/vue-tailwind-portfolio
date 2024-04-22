@@ -159,7 +159,7 @@
   }
   
   .fade-in-down {
-    animation: fade-in-down 2s ease infinite;
+    animation: fade-in-down 2s ease;
   }
   @keyframes fade-in-down {
     0% {

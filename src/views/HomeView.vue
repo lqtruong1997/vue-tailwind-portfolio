@@ -33,13 +33,13 @@ import { CodeBracketIcon } from '@heroicons/vue/24/solid'
         Worked Company
     </div>
     <div class="bg-item-bg p-5 rounded-2xl mb-4 flex justify-evenly">
-        <a target="_blank" href="https://www.platform28.com/" v-in-viewport="{className: 'flip'}" class="bg-white hover:bg-white rounded-md">
+        <a target="_blank" href="https://www.platform28.com/" v-in-viewport="{className: 'fade-in-down'}" class="bg-white hover:bg-white rounded-md">
             <img src="../assets/Platform28Featured.webp" width="150">
         </a>
-        <a target="_blank" href="https://www.preciofishbone.vn/" v-in-viewport="{className: 'flip'}" class="bg-white hover:bg-white rounded-md">
+        <a target="_blank" href="https://www.preciofishbone.vn/" v-in-viewport="{className: 'fade-in-down'}" class="bg-white hover:bg-white rounded-md">
             <img src="../assets/precio_logga_rgb_1600px.png" width="200" class="scale-75">
         </a>
-        <a class="hover:bg-item-bg" v-in-viewport="{className: 'flip'}">
+        <a class="hover:bg-item-bg" v-in-viewport="{className: 'fade-in-down'}">
             <img src="../assets/tera-logo.webp" class="rounded-md" width="80">
         </a>
     </div>

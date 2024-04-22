@@ -24,7 +24,7 @@ const manager = new THREE.LoadingManager();
 manager.onLoad = () => {
     setTimeout(() => {
         initSuccess.value = true
-    }, 2000);
+    }, 1000);
 };
 
 onMounted(() => {
@@ -38,7 +38,7 @@ onMounted(() => {
             update3DModel(mroot)
             scene.add( mroot );
             animate()
-        }, 1900)
+        }, 900)
     }, undefined, function ( error: any ) {
         console.error( error );
     } );
@@ -84,7 +84,7 @@ onUnmounted(() => {
         <div ref="target" class="absolute -left-52 -top-10 w-full h-full"></div>
         <div class="absolute w-full h-full lg:w-1/2 right-0 flex flex-col items-center justify-center">
             <span class="flex mb-3">
-                <h1 class="font-bold text-8xl text-center text-heading-color pb-4">Andy&nbsp;</h1>
+                <h1 class="font-bold text-8xl text-center text-black pb-4">Andy&nbsp;</h1>
                 <h1 class="font-bold text-8xl text-center text-primary-bg pb-4">Le</h1>
             </span>
             <h3 v-text-display="{stringList: positionList, wordDisplayTime: 3000}" class="font-semibold text-text-light text-4xl px-5 pb-4 rounded-lg text-center text-white mb-3"></h3>

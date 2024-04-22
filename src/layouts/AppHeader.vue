@@ -46,9 +46,9 @@ const onChangeTheme = () => {
 </script>
 
 <template>
-    <header class="flex justify-between align-middle text-4xl">
-        <span className="font-serif font-extrabold text-heading-color">Andy Le</span>
-        <button className="rounded-full w-10 bg-card-bg text-xs text-heading-color hover:bg-primary-bg hover:text-button-text-color outline-none border-none p-2">
+    <header class="flex justify-between align-middle">
+        <h3 className="font-bold text-5xl text-heading-color">Andy Le</h3>
+        <button className="rounded-full w-12 bg-card-bg text-xs text-heading-color hover:bg-primary-bg hover:text-button-text-color outline-none border-none p-2">
             <ArrowPathIcon @click="onChangeTheme()" :class="{'rotate-180': rotate}" class="duration-200"></ArrowPathIcon>
         </button>
     </header>
