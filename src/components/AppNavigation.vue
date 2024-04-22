@@ -7,23 +7,23 @@ const navigationItems = ref([
     {
         icon: HomeIcon,
         text: 'Home',
-        url: '/details/home'
+        url: '/home'
     },{
         icon: DocumentTextIcon,
         text: 'Resume',
-        url: '/details/resume'
+        url: '/resume'
     },{
         icon: ComputerDesktopIcon,
         text: 'Works',
-        url: '/details/works'
+        url: '/works'
     },{
         icon: CubeIcon,
         text: 'Playground',
-        url: '/details/playground'
+        url: '/playground'
     },{
         icon: IdentificationIcon,
         text: 'Contact',
-        url: '/details/contact'
+        url: '/contact'
     }
 ])
 

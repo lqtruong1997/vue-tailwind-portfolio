@@ -88,7 +88,7 @@ onUnmounted(() => {
                 <h1 class="font-bold text-8xl text-center text-primary-bg pb-4">Le</h1>
             </span>
             <h3 v-text-display="{stringList: positionList, wordDisplayTime: 3000}" class="font-semibold text-text-light text-4xl px-5 pb-4 rounded-lg text-center text-white mb-3"></h3>
-            <button type="button" @click="$router.push('/details/home')"
+            <button type="button" @click="$router.push('/home')"
             class="w-48 h-12 text-button-text-color p-2 font-semibold bg-primary-bg text-2xl text-center rounded-full inline-flex items-center justify-center pl-4">
                 Explore
             </button>

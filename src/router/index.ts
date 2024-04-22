@@ -11,24 +11,24 @@ const router = createRouter({
       component: SplashScreen
     },
     {
-      path: '/details',
-      redirect: '/details/home',
+      path: '/',
+      redirect: '/home',
       component: AppLayout,
       children: [
         {
-          path: '/details/home',
+          path: '/home',
           component: HomeView
         },{
-          path: '/details/resume',
+          path: '/resume',
           component: () => import('../views/ResumeView.vue')
         },{
-          path: '/details/works',
+          path: '/works',
           component: () => import('../views/WorkView.vue')
         },{
-          path: '/details/playground',
+          path: '/playground',
           component: () => import('../views/PlaygroundView.vue')
         },{
-          path: '/details/contact',
+          path: '/contact',
           component: () => import('../views/ContactView.vue')
         }
       ]
