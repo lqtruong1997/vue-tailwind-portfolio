@@ -1,1 +1,0 @@
-{"version":3,"file":"ContactView-D2EqfNNy.js","sources":["../../src/views/ContactView.vue"],"sourcesContent":["<script setup lang=\"ts\">\r\nimport { ref } from 'vue'\r\n\r\nconst count = ref(0)\r\n</script>\r\n\r\n<template>\r\n    <header>Contact works</header>\r\n</template>"],"names":["ref"],"mappings":"sGAGc,OAAAA,EAAI,CAAC"}

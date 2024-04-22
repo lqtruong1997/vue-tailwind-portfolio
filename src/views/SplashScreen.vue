@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import { onMounted, ref } from 'vue';
+import { onMounted, onUnmounted, ref } from 'vue';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 const positionList = ['Frontend Engineer', 'Vue.js Developer', 'Angular Developer', 'Fullstack Developer']
@@ -40,18 +40,14 @@ onMounted(() => {
             animate()
         }, 1900)
     }, undefined, function ( error: any ) {
-
         console.error( error );
-
     } );
 });
 
 function animate() {
-    setTimeout( function() {
-        requestAnimationFrame( animate );
-        controls.update();
-        renderer.render( scene, camera );
-    }, 100 / 4 );
+    requestAnimationFrame( animate );
+    controls.update();
+    renderer.render( scene, camera );
 }
 const update3DModel = (mroot: any) => {
     var bbox = new THREE.Box3().setFromObject(mroot);
@@ -68,11 +64,13 @@ const update3DModel = (mroot: any) => {
     window.addEventListener( 'mousemove', onMouseMove, false );
 }
 function onMouseMove( event: MouseEvent ) {
-
-    camera.position.x = ((event.clientX / window.innerWidth) * 2 - 1) * 8;
-    camera.position.y = (-(event.clientY / window.innerHeight) * 2 + 1) * 8;
-
+    camera.position.x = -((event.clientX / window.innerWidth) * 2 - 1) * 8;
+    camera.position.y = -(-(event.clientY / window.innerHeight) * 2 + 1) * 4;
 }
+onUnmounted(() => {
+    renderer.forceContextLoss()
+    renderer.dispose()
+})
 </script>
 
 <template>
