@@ -16,7 +16,7 @@
         --border-light: #d1d5db;
         --home-card-bg: #dbeafe;
         --home-card-border: #dbeafe;
-        --page-bg-img: url('../assets/light-theme-bg.jpg');
+        --page-bg-img: url('../assets/light-theme-bg.png');
     }
   
     html[data-theme='dark'] {
