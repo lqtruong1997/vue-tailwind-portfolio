@@ -40,7 +40,7 @@ import { CodeBracketIcon } from '@heroicons/vue/24/solid'
             <img src="../assets/precio_logga_rgb_1600px.png" width="200" class="scale-75">
         </a>
         <a class="hover:bg-item-bg" v-in-viewport="{className: 'fade-in-down'}">
-            <img src="../assets/tera-logo.webp" class="rounded-md" width="80">
+            <img src="../assets/tera-logo.webp" class="rounded-md scale-110" width="80">
         </a>
     </div>
 </template>

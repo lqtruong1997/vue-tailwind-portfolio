@@ -26,28 +26,42 @@ manager.onLoad = () => {
         initSuccess.value = true
     }, 1000);
 };
+const isMobile = () => {
+    if (screen.width <= 1024) {
+      return true
+    } else {
+      return false
+    }
+}
 
 onMounted(() => {
-    target.value.appendChild(renderer.domElement);
-
-    const loader = new GLTFLoader(manager);
-    setTimeout(() => {
+    if (!isMobile()) {
+        render3DModel()
+    } else {
         initSuccess.value = true
-    }, 1500);
-    
-    loader.load(new URL('../assets/desk.glb', import.meta.url).toString(), function ( gltf: any ) {
-        setTimeout(() => {
-            mroot = gltf.scene;
-            update3DModel(mroot)
-            scene.add( mroot );
-            animate()
-        }, 900)
-    }, undefined, function ( error: any ) {
-        console.error( error );
-    } );
+    }
 });
 
-function animate() {
+const render3DModel = () => {
+    target.value.appendChild(renderer.domElement);
+        const loader = new GLTFLoader(manager);
+        setTimeout(() => {
+            initSuccess.value = true
+        }, 1500);
+
+        loader.load(new URL('../assets/desk.glb', import.meta.url).toString(), function ( gltf: any ) {
+            setTimeout(() => {
+                mroot = gltf.scene;
+                update3DModel(mroot)
+                scene.add( mroot );
+                animate()
+            }, 900)
+        }, undefined, ( error: any ) => {
+            console.error( error );
+        } );
+}
+
+const animate = () => {
     requestAnimationFrame( animate );
     controls.update();
     renderer.render( scene, camera );
